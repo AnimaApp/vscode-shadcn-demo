@@ -4,7 +4,7 @@ A demo to show the Anima VsCode extension working with the following [design](ht
 
 ## Getting Started
 
-1. Clone the repository using xxx
+1. Clone the repository using `git clone git@github.com:AnimaApp/vscode-shadcn-demo.git`
 2. Get the latest version of the code using `git pull`
 3. Install the dependencies using `pnpm install`
 4. Run the site using `pnpm www:dev`
