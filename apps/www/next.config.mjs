@@ -30,7 +30,7 @@ const nextConfig = {
       },
       {
         source: "/examples",
-        destination: "/examples/mail",
+        destination: "/examples/forms",
         permanent: false,
       },
       {
