@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ArrowRightIcon } from "@radix-ui/react-icons"
 
 import { cn } from "@/lib/utils"
 import { ScrollArea, ScrollBar } from "@/registry/new-york/ui/scroll-area"
@@ -11,21 +10,18 @@ const examples = [
   {
     name: "Forms",
     href: "/examples/forms",
-    code: "https://github.com/shadcn/ui/tree/main/www/app/(app)/examples/forms",
   },
   {
     name: "Music",
     href: "/examples/music",
-    code: "https://github.com/shadcn/ui/tree/main/www/app/(app)/examples/music",
   },
   {
     name: "Authentication",
     href: "/examples/authentication",
-    code: "https://github.com/shadcn/ui/tree/main/www/app/(app)/examples/authentication",
   },
 ]
 
-interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
   const pathname = usePathname()
@@ -53,29 +49,5 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
         <ScrollBar orientation="horizontal" className="invisible" />
       </ScrollArea>
     </div>
-  )
-}
-
-interface ExampleCodeLinkProps {
-  pathname: string | null
-}
-
-export function ExampleCodeLink({ pathname }: ExampleCodeLinkProps) {
-  const example = examples.find((example) => pathname?.startsWith(example.href))
-
-  if (!example?.code) {
-    return null
-  }
-
-  return (
-    <Link
-      href={example?.code}
-      target="_blank"
-      rel="nofollow"
-      className="absolute right-0 top-0 hidden items-center rounded-[0.5rem] text-sm font-medium md:flex"
-    >
-      View code
-      <ArrowRightIcon className="ml-1 h-4 w-4" />
-    </Link>
   )
 }

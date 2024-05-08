@@ -1,18 +1,5 @@
 import { z } from "zod"
 
-export const blockChunkSchema = z.object({
-  name: z.string(),
-  description: z.string(),
-  component: z.any(),
-  file: z.string(),
-  code: z.string().optional(),
-  container: z
-    .object({
-      className: z.string().nullish(),
-    })
-    .optional(),
-})
-
 export const registryEntrySchema = z.object({
   name: z.string(),
   description: z.string().optional(),
@@ -29,7 +16,6 @@ export const registryEntrySchema = z.object({
   ]),
   category: z.string().optional(),
   subcategory: z.string().optional(),
-  chunks: z.array(blockChunkSchema).optional(),
 })
 
 export const registrySchema = z.array(registryEntrySchema)
@@ -37,21 +23,3 @@ export const registrySchema = z.array(registryEntrySchema)
 export type RegistryEntry = z.infer<typeof registryEntrySchema>
 
 export type Registry = z.infer<typeof registrySchema>
-
-export const blockSchema = registryEntrySchema.extend({
-  type: z.literal("components:block"),
-  style: z.enum(["default", "new-york"]),
-  component: z.any(),
-  container: z
-    .object({
-      height: z.string().optional(),
-      className: z.string().nullish(),
-    })
-    .optional(),
-  code: z.string(),
-  highlightedCode: z.string(),
-})
-
-export type Block = z.infer<typeof blockSchema>
-
-export type BlockChunk = z.infer<typeof blockChunkSchema>
