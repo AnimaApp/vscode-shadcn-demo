@@ -2,4 +2,6 @@ dist
 node_modules
 .next
 build
-www/pages/api/registry.json
+__registry__/index.tsx
+app/examples/mail/components/mail.tsx
+

@@ -12,10 +12,10 @@ import {
   TabsTrigger,
 } from "../../../../components/ui/tabs"
 
-import { AlbumArtwork } from "./components/album-artwork"
-import { Menu } from "./components/menu"
-import { PodcastEmptyPlaceholder } from "./components/podcast-empty-placeholder"
-import { Sidebar } from "./components/sidebar"
+import { AlbumArtwork } from "@/components/music/album-artwork"
+import { Menu } from "@/components/music/menu"
+import { PodcastEmptyPlaceholder } from "@/components/music/podcast-empty-placeholder"
+import { Sidebar } from "@/components/music/sidebar"
 import { listenNowAlbums, madeForYouAlbums } from "./data/albums"
 import { playlists } from "./data/playlists"
 

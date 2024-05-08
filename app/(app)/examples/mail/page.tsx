@@ -1,7 +1,7 @@
 import { cookies } from "next/headers"
 import Image from "next/image"
 
-import { Mail } from "./components/mail"
+import { Mail } from "@/components/mail/mail"
 import { accounts, mails } from "./data"
 
 export default function MailPage() {
