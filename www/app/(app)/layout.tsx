@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { SiteFooter } from "../../components/site-footer"
 
 interface AppLayoutProps {
@@ -7,7 +8,12 @@ interface AppLayoutProps {
 export default function AppLayout({ children }: AppLayoutProps) {
   return (
     <>
-      <main className="flex-1">{children}</main>
+      <nav className="container flex gap-8 px-16 py-8">
+        <Link className="underline" href="/sink">Sink</Link>
+        <Link className="underline" href="/examples">Examples</Link>
+      </nav>
+      <main className="flex-1">
+        {children}</main>
       <SiteFooter />
     </>
   )

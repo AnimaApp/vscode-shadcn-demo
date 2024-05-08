@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 import { cn } from "@/lib/utils"
-import { ScrollArea, ScrollBar } from "@/registry/new-york/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
 const examples = [
   {
@@ -18,6 +18,26 @@ const examples = [
   {
     name: "Authentication",
     href: "/examples/authentication",
+  },
+  {
+    name: "Cards",
+    href: "/examples/cards",
+  },
+  {
+    name: "Dashboard",
+    href: "/examples/dashboard",
+  },
+  {
+    name: "Mail",
+    href: "/examples/mail",
+  },
+  {
+    name: "Tasks",
+    href: "/examples/tasks",
+  },
+  {
+    name: "Playground",
+    href: "/examples/playground",
   },
 ]
 

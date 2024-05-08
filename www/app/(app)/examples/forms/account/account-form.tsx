@@ -7,15 +7,15 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 
 import { cn } from "../../../../../lib/utils"
-import { Button } from "../../../../../registry/new-york/ui/button"
-import { Calendar } from "../../../../../registry/new-york/ui/calendar"
+import { Button } from "../../../../../components/ui/button"
+import { Calendar } from "../../../../../components/ui/calendar"
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "../../../../../registry/new-york/ui/command"
+} from "../../../../../components/ui/command"
 import {
   Form,
   FormControl,
@@ -24,14 +24,14 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../../../../../registry/new-york/ui/form"
-import { Input } from "../../../../../registry/new-york/ui/input"
+} from "../../../../../components/ui/form"
+import { Input } from "../../../../../components/ui/input"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../../../../../registry/new-york/ui/popover"
-import { toast } from "../../../../../registry/new-york/ui/use-toast"
+} from "../../../../../components/ui/popover"
+import { toast } from "../../../../../components/ui/use-toast"
 
 const languages = [
   { label: "English", value: "en" },

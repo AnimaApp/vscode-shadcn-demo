@@ -7,7 +7,7 @@ import {
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "../ui/toggle-group"
+} from "../../../components/ui/toggle-group"
 
 export default function ToggleGroupDemo() {
   return (

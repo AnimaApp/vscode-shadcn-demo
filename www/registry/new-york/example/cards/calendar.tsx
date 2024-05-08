@@ -2,8 +2,8 @@
 
 import { addDays } from "date-fns"
 
-import { Calendar } from "../../ui/calendar"
-import { Card, CardContent } from "../../ui/card"
+import { Calendar } from "../../../../components/ui/calendar"
+import { Card, CardContent } from "../../../../components/ui/card"
 
 const start = new Date(2023, 5, 5)
 

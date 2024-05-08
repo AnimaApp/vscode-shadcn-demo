@@ -5,7 +5,7 @@ import {
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "../ui/input-otp"
+} from "../../../components/ui/input-otp"
 
 export default function InputOTPWithSeparator() {
   return (

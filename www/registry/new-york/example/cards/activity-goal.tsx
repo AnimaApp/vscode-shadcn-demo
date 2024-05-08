@@ -6,7 +6,7 @@ import { useTheme } from "next-themes"
 import { Bar, BarChart, ResponsiveContainer } from "recharts"
 
 import { useConfig } from "../../../../hooks/use-config"
-import { Button } from "../../ui/button"
+import { Button } from "../../../../components/ui/button"
 import {
   Card,
   CardContent,
@@ -14,7 +14,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../../ui/card"
+} from "../../../../components/ui/card"
 import { themes } from "../../../themes"
 
 const data = [

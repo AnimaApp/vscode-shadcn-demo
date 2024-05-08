@@ -46,7 +46,7 @@ import ToggleDisabled from "../../../registry/new-york/example/toggle-disabled"
 import ToggleOutline from "../../../registry/new-york/example/toggle-outline"
 import ToggleWithText from "../../../registry/new-york/example/toggle-with-text"
 import TooltipDemo from "../../../registry/new-york/example/tooltip-demo"
-import { Button } from "../../../registry/new-york/ui/button"
+import { Button } from "../../../components/ui/button"
 
 export default function KitchenSinkPage() {
   return (

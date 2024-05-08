@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { cn } from "../../../lib/utils"
 import { useMediaQuery } from "../../../hooks/use-media-query"
-import { Button } from "../ui/button"
+import { Button } from "../../../components/ui/button"
 import {
   Dialog,
   DialogContent,
@@ -10,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../ui/dialog"
+} from "../../../components/ui/dialog"
 import {
   Drawer,
   DrawerClose,
@@ -20,9 +20,9 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "../ui/drawer"
-import { Input } from "../ui/input"
-import { Label } from "../ui/label"
+} from "../../../components/ui/drawer"
+import { Input } from "../../../components/ui/input"
+import { Label } from "../../../components/ui/label"
 
 export default function DrawerDialogDemo() {
   const [open, setOpen] = React.useState(false)

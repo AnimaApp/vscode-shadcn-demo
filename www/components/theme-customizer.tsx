@@ -17,7 +17,7 @@ import { cn } from "../lib/utils"
 import { useConfig } from "../hooks/use-config"
 import { copyToClipboardWithMeta } from "./copy-button"
 import { ThemeWrapper } from "./theme-wrapper"
-import { Button } from "../registry/new-york/ui/button"
+import { Button } from "./ui/button"
 import {
   Dialog,
   DialogContent,
@@ -25,19 +25,19 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../registry/new-york/ui/dialog"
+} from "./ui/dialog"
 import {
   Drawer,
   DrawerContent,
   DrawerTrigger,
-} from "../registry/new-york/ui/drawer"
-import { Label } from "../registry/new-york/ui/label"
+} from "./ui/drawer"
+import { Label } from "./ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../registry/new-york/ui/popover"
-import { Skeleton } from "../registry/new-york/ui/skeleton"
+} from "./ui/popover"
+import { Skeleton } from "./ui/skeleton"
 import { Theme, themes } from "../registry/themes"
 
 import "@/styles/mdx.css"
@@ -45,7 +45,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "../registry/new-york/ui/tooltip"
+} from "./ui/tooltip"
 
 export function ThemeCustomizer() {
   const [config, setConfig] = useConfig()

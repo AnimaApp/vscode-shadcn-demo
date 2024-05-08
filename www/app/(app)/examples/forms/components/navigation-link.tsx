@@ -1,5 +1,5 @@
 import { cn } from "../../../../../lib/utils";
-import { buttonVariants } from "../../../../../registry/new-york/ui/button";
+import { buttonVariants } from "../../../../../components/ui/button";
 import Link from "next/link";
 
 interface Props {

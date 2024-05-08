@@ -16,7 +16,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "../ui/command"
+} from "../../../components/ui/command"
 
 export default function CommandDemo() {
   return (

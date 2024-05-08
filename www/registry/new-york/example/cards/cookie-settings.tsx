@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "../../ui/button"
+import { Button } from "../../../../components/ui/button"
 import {
   Card,
   CardContent,
@@ -8,9 +8,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../../ui/card"
-import { Label } from "../../ui/label"
-import { Switch } from "../../ui/switch"
+} from "../../../../components/ui/card"
+import { Label } from "../../../../components/ui/label"
+import { Switch } from "../../../../components/ui/switch"
 
 export function CardsCookieSettings() {
   return (

@@ -12,8 +12,8 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "../ui/breadcrumb"
-import { Button } from "../ui/button"
+} from "../../../components/ui/breadcrumb"
+import { Button } from "../../../components/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -23,13 +23,13 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "../ui/drawer"
+} from "../../../components/ui/drawer"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu"
+} from "../../../components/ui/dropdown-menu"
 
 const items = [
   { href: "#", label: "Home" },
