@@ -15,27 +15,27 @@ import {
   Users2,
 } from "lucide-react"
 
-import { cn } from "../../../../../lib/utils"
-import { Input } from "../../../../../components/ui/input"
+import { cn } from "../../lib/utils"
+import { Input } from "../ui/input"
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "../../../../../components/ui/resizable"
-import { Separator } from "../../../../../components/ui/separator"
+} from "../ui/resizable"
+import { Separator } from "../ui/separator"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "../../../../../components/ui/tabs"
-import { TooltipProvider } from "../../../../../components/ui/tooltip"
+} from "../ui/tabs"
+import { TooltipProvider } from "../ui/tooltip"
 import { AccountSwitcher } from "./account-switcher"
 import { MailDisplay } from "./mail-display"
 import { MailList } from "./mail-list"
 import { Nav } from "./nav"
-import { type Mail } from "../data"
-import { useMail } from "../use-mail"
+import { useMail } from "@/app/(app)/examples/mail/use-mail"
+import { type Mail } from "@/app/(app)/examples/mail/data"
 
 interface MailProps {
   accounts: {

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { PlusCircledIcon } from "@radix-ui/react-icons"
 
-import { cn } from "../../../../../lib/utils"
+import { cn } from "../../lib/utils"
 import {
   ContextMenu,
   ContextMenuContent,
@@ -11,10 +11,9 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "../../../../../components/ui/context-menu"
-
-import { Album } from "../data/albums"
-import { playlists } from "../data/playlists"
+} from "../ui/context-menu"
+import { Album } from "@/app/(app)/examples/music/data/albums"
+import { playlists } from "@/app/(app)/examples/music/data/playlists"
 
 interface AlbumArtworkProps extends React.HTMLAttributes<HTMLDivElement> {
   album: Album

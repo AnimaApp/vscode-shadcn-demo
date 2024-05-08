@@ -1,7 +1,7 @@
 "use client"
 
 import { usePathname } from "next/navigation"
-import { cn } from "../../../../../lib/utils"
+import { cn } from "../../lib/utils"
 import { NavigationLink } from "./navigation-link"
 
 interface SidebarNavProps extends React.HTMLAttributes<HTMLElement> {

@@ -16,33 +16,34 @@ import {
 import {
   DropdownMenuContent,
   DropdownMenuItem,
-} from "../../../../../components/ui/dropdown-menu"
+} from "../ui/dropdown-menu"
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "../../../../../components/ui/avatar"
-import { Button } from "../../../../../components/ui/button"
-import { Calendar } from "../../../../../components/ui/calendar"
+} from "../ui/avatar"
+import { Button } from "../ui/button"
+import { Calendar } from "../ui/calendar"
 import {
   DropdownMenu,
   DropdownMenuTrigger,
-} from "../../../../../components/ui/dropdown-menu"
-import { Label } from "../../../../../components/ui/label"
+} from "../ui/dropdown-menu"
+import { Label } from "../ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../../../../../components/ui/popover"
-import { Separator } from "../../../../../components/ui/separator"
-import { Switch } from "../../../../../components/ui/switch"
-import { Textarea } from "../../../../../components/ui/textarea"
+} from "../ui/popover"
+import { Separator } from "../ui/separator"
+import { Switch } from "../ui/switch"
+import { Textarea } from "../ui/textarea"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "../../../../../components/ui/tooltip"
-import { Mail } from "../data"
+} from "../ui/tooltip"
+import { Mail } from "@/app/(app)/examples/mail/data"
+
 
 interface MailDisplayProps {
   mail: Mail | null
