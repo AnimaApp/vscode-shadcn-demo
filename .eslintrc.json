@@ -19,7 +19,7 @@
       "config": "tailwind.config.cjs"
     },
     "next": {
-      "rootDir": ["apps/*/"]
+      "rootDir": ["/www/*"]
     }
   },
   "overrides": [

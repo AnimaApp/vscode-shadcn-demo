@@ -3,4 +3,4 @@ node_modules
 .next
 build
 .contentlayer
-apps/www/pages/api/registry.json
+www/pages/api/registry.json
