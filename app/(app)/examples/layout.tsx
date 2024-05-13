@@ -1,3 +1,5 @@
+"use client"
+
 import { ExamplesNav } from "@/components/examples-nav"
 import {
   PageHeader,

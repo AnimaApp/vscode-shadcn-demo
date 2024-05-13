@@ -1,3 +1,5 @@
+'use client'
+
 import { ThemeWrapper } from "../../../components/theme-wrapper"
 
 interface SinkLayoutProps {
