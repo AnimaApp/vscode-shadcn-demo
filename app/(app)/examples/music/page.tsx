@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { PlusCircledIcon } from "@radix-ui/react-icons"
 

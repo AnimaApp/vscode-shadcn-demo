@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image"
 import { CounterClockwiseClockIcon } from "@radix-ui/react-icons"
 

@@ -1,4 +1,3 @@
-"use client"
 
 import { AspectRatio } from "./ui/aspect-ratio"
 

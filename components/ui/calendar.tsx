@@ -1,4 +1,3 @@
-"use client"
 
 import * as React from "react"
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons"
