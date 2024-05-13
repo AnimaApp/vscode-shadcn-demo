@@ -1,3 +1,4 @@
+'use client'
 
 import * as React from "react"
 import {
@@ -43,7 +44,7 @@ interface MailProps {
     icon: React.ReactNode
   }[]
   mails: Mail[]
-  defaultLayout: number[] | undefined
+  defaultLayout?: number[] | undefined
   defaultCollapsed?: boolean
   navCollapsedSize: number
 }
