@@ -1,4 +1,3 @@
-import { Metadata } from "next"
 import Image from "next/image"
 import { PlusCircledIcon } from "@radix-ui/react-icons"
 
@@ -18,11 +17,6 @@ import { PodcastEmptyPlaceholder } from "@/components/music/podcast-empty-placeh
 import { Sidebar } from "@/components/music/sidebar"
 import { listenNowAlbums, madeForYouAlbums } from "./data/albums"
 import { playlists } from "./data/playlists"
-
-export const metadata: Metadata = {
-  title: "Music App",
-  description: "Example music app using the components.",
-}
 
 export default function MusicPage() {
   return (

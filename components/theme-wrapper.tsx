@@ -14,10 +14,12 @@ export function ThemeWrapper({
 }: ThemeWrapperProps) {
   const [config] = useConfig()
 
+  console.log(defaultTheme, config.theme)
+
   return (
     <div
       className={cn(
-        `theme-${defaultTheme || config.theme}`,
+        `theme-zinc`,
         "w-full",
         className
       )}

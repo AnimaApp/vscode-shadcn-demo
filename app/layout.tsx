@@ -76,7 +76,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" suppressHydrationWarning style={{ colorScheme: 'dark'}}>
         <head />
         <body
           className={cn(

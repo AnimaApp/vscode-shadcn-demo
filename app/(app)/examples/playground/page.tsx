@@ -1,4 +1,3 @@
-import { Metadata } from "next"
 import Image from "next/image"
 import { CounterClockwiseClockIcon } from "@radix-ui/react-icons"
 
@@ -29,11 +28,6 @@ import { TemperatureSelector } from "./components/temperature-selector"
 import { TopPSelector } from "./components/top-p-selector"
 import { models, types } from "./data/models"
 import { presets } from "./data/presets"
-
-export const metadata: Metadata = {
-  title: "Playground",
-  description: "The OpenAI Playground built using the components.",
-}
 
 export default function PlaygroundPage() {
   return (
