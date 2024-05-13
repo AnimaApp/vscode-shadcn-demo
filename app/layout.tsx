@@ -5,8 +5,6 @@ import { siteConfig } from "../config/site"
 import { fontSans } from "../lib/fonts"
 import { cn } from "../lib/utils"
 import { ThemeProvider } from "../components/providers"
-import { TailwindIndicator } from "../components/tailwind-indicator"
-import { ThemeSwitcher } from "../components/theme-switcher"
 import { Toaster as NewYorkSonner } from "../components/ui/sonner"
 import { Toaster as NewYorkToaster } from "../components/ui/toaster"
 
@@ -95,8 +93,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 {children}
               </div>
             </div>
-            <TailwindIndicator />
-            <ThemeSwitcher />
             <NewYorkToaster />
             <NewYorkSonner />
           </ThemeProvider>
