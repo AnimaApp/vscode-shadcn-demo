@@ -5,11 +5,17 @@ module.exports = {
   darkMode: ["class"],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
+    spacing: {
+      formWidth: "1376px",
+      navigationWidth: "1091px",
+      authScreenWidth: "733px",
+      authScreenHeight: "832px",
+    },
     container: {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1440px",
       },
     },
     extend: {
