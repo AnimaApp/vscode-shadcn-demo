@@ -1,4 +1,3 @@
-"use client"
 
 import * as React from "react"
 import { DotsHorizontalIcon } from "@radix-ui/react-icons"

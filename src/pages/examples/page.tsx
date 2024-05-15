@@ -1,20 +1,15 @@
 import { ExamplesNav } from "@/components/examples-nav"
-import {
-  PageHeader,
-  PageHeaderHeading,
-} from "@/components/page-header"
+import { Navigation } from "@/components/navigation"
 import { Outlet } from "react-router-dom"
 
 export default function Examples() {
   return (
     <>
-      <div className="container relative">
-        <PageHeader>
-          <PageHeaderHeading className="hidden md:block">
-            Demo
-          </PageHeaderHeading>
-        </PageHeader>
-        <section>
+      <div className="container relative py-8">
+        <Navigation />
+
+        <div className="p-4">
+
           <div className="overflow-hidden rounded-[0.5rem] flex border bg-background shadow-md md:shadow-xl">
             <ExamplesNav />
             <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
@@ -23,7 +18,8 @@ export default function Examples() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
+
       </div>
     </>
   )

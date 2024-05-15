@@ -32,6 +32,10 @@ const examples = [
     href: "/examples/tasks",
   },
   {
+    name: "Text Editor",
+    href: "/examples/text-editor",
+  },
+  {
     name: "Playground",
     href: "/examples/playground",
   },
