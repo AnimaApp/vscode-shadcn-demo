@@ -194,13 +194,17 @@ function ComponentWrapper({
   children,
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      className={cn(
-        "flex items-center justify-between space-x-4 rounded-md p-4",
-        className
-      )}
-    >
-      {children}
+    <div className="flex flex-col">
+      <div className="flex-1">
+        <div
+          className={cn(
+            "flex items-center justify-between space-x-4 rounded-md p-4",
+            className
+          )}
+        >
+          {children}
+        </div>
+      </div>
     </div>
   )
 }

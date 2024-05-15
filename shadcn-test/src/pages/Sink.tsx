@@ -1,52 +1,51 @@
 import * as React from "react"
-// import Link from "next/link"
 
-import { cn } from "../lib/utils"
-// import AccordionDemo from "../../../registry/new-york/example/accordion-demo"
-// import AlertDialogDemo from "../../../registry/new-york/example/alert-dialog-demo"
-// import AspectRatioDemo from "../../../registry/new-york/example/aspect-ratio-demo"
-// import AvatarDemo from "../../../registry/new-york/example/avatar-demo"
-// import BadgeDemo from "../../../registry/new-york/example/badge-demo"
-// import BadgeDestructive from "../../../registry/new-york/example/badge-destructive"
-// import BadgeOutline from "../../../registry/new-york/example/badge-outline"
-// import BadgeSecondary from "../../../registry/new-york/example/badge-secondary"
-// import ButtonDemo from "../../../registry/new-york/example/button-demo"
-// import ButtonDestructive from "../../../registry/new-york/example/button-destructive"
-// import ButtonGhost from "../../../registry/new-york/example/button-ghost"
-// import ButtonLink from "../../../registry/new-york/example/button-link"
-// import ButtonLoading from "../../../registry/new-york/example/button-loading"
-// import ButtonOutline from "../../../registry/new-york/example/button-outline"
-// import ButtonSecondary from "../../../registry/new-york/example/button-secondary"
-// import ButtonWithIcon from "../../../registry/new-york/example/button-with-icon"
-import CardDemo from "../registry/new-york/example/card-demo"
-// import CheckboxDemo from "../../../registry/new-york/example/checkbox-demo"
-// import CollapsibleDemo from "../../../registry/new-york/example/collapsible-demo"
-// import CommandDemo from "../../../registry/new-york/example/command-demo"
-// import ContextMenuDemo from "../../../registry/new-york/example/context-menu-demo"
-// import DatePickerDemo from "../../../registry/new-york/example/date-picker-demo"
-// import DialogDemo from "../../../registry/new-york/example/dialog-demo"
-// import DropdownMenuDemo from "../../../registry/new-york/example/dropdown-menu-demo"
-// import HoverCardDemo from "../../../registry/new-york/example/hover-card-demo"
-// import MenubarDemo from "../../../registry/new-york/example/menubar-demo"
-// import NavigationMenuDemo from "../../../registry/new-york/example/navigation-menu-demo"
-// import PopoverDemo from "../../../registry/new-york/example/popover-demo"
-// import ProgressDemo from "../../../registry/new-york/example/progress-demo"
-// import RadioGroupDemo from "../../../registry/new-york/example/radio-group-demo"
-// import ScrollAreaDemo from "../../../registry/new-york/example/scroll-area-demo"
-// import SelectDemo from "../../../registry/new-york/example/select-demo"
-// import SeparatorDemo from "../../../registry/new-york/example/separator-demo"
-// import SheetDemo from "../../../registry/new-york/example/sheet-demo"
-// import SkeletonDemo from "../../../registry/new-york/example/skeleton-demo"
-import SliderDemo from "../registry/new-york/example/slider-demo"
-// import SwitchDemo from "../../../registry/new-york/example/switch-demo"
-// import TabsDemo from "../../../registry/new-york/example/tabs-demo"
-// import ToastDemo from "../../../registry/new-york/example/toast-demo"
-// import ToggleDemo from "../../../registry/new-york/example/toggle-demo"
-// import ToggleDisabled from "../../../registry/new-york/example/toggle-disabled"
-// import ToggleOutline from "../../../registry/new-york/example/toggle-outline"
-// import ToggleWithText from "../../../registry/new-york/example/toggle-with-text"
-// import TooltipDemo from "../../../registry/new-york/example/tooltip-demo"
-// import { Button } from "../../../components/ui/button"
+import { cn } from "@/lib/utils"
+import AccordionDemo from "@/registry/new-york/example/accordion-demo"
+import AlertDialogDemo from "@/registry/new-york/example/alert-dialog-demo"
+import AspectRatioDemo from "@/registry/new-york/example/aspect-ratio-demo"
+import AvatarDemo from "@/registry/new-york/example/avatar-demo"
+import BadgeDemo from "@/registry/new-york/example/badge-demo"
+import BadgeDestructive from "@/registry/new-york/example/badge-destructive"
+import BadgeOutline from "@/registry/new-york/example/badge-outline"
+import BadgeSecondary from "@/registry/new-york/example/badge-secondary"
+import ButtonDemo from "@/registry/new-york/example/button-demo"
+import ButtonDestructive from "@/registry/new-york/example/button-destructive"
+import ButtonGhost from "@/registry/new-york/example/button-ghost"
+import ButtonLink from "@/registry/new-york/example/button-link"
+import ButtonLoading from "@/registry/new-york/example/button-loading"
+import ButtonOutline from "@/registry/new-york/example/button-outline"
+import ButtonSecondary from "@/registry/new-york/example/button-secondary"
+import ButtonWithIcon from "@/registry/new-york/example/button-with-icon"
+import CardDemo from "@/registry/new-york/example/card-demo"
+import CheckboxDemo from "@/registry/new-york/example/checkbox-demo"
+import CollapsibleDemo from "@/registry/new-york/example/collapsible-demo"
+import CommandDemo from "@/registry/new-york/example/command-demo"
+import ContextMenuDemo from "@/registry/new-york/example/context-menu-demo"
+import DatePickerDemo from "@/registry/new-york/example/date-picker-demo"
+import DialogDemo from "@/registry/new-york/example/dialog-demo"
+import DropdownMenuDemo from "@/registry/new-york/example/dropdown-menu-demo"
+import HoverCardDemo from "@/registry/new-york/example/hover-card-demo"
+import MenubarDemo from "@/registry/new-york/example/menubar-demo"
+import NavigationMenuDemo from "@/registry/new-york/example/navigation-menu-demo"
+import PopoverDemo from "@/registry/new-york/example/popover-demo"
+import ProgressDemo from "@/registry/new-york/example/progress-demo"
+import RadioGroupDemo from "@/registry/new-york/example/radio-group-demo"
+import ScrollAreaDemo from "@/registry/new-york/example/scroll-area-demo"
+import SelectDemo from "@/registry/new-york/example/select-demo"
+import SeparatorDemo from "@/registry/new-york/example/separator-demo"
+import SheetDemo from "@/registry/new-york/example/sheet-demo"
+import SkeletonDemo from "@/registry/new-york/example/skeleton-demo"
+import SliderDemo from "@/registry/new-york/example/slider-demo"
+import SwitchDemo from "@/registry/new-york/example/switch-demo"
+import TabsDemo from "@/registry/new-york/example/tabs-demo"
+import ToastDemo from "@/registry/new-york/example/toast-demo"
+import ToggleDemo from "@/registry/new-york/example/toggle-demo"
+import ToggleDisabled from "@/registry/new-york/example/toggle-disabled"
+import ToggleOutline from "@/registry/new-york/example/toggle-outline"
+import ToggleWithText from "@/registry/new-york/example/toggle-with-text"
+import TooltipDemo from "@/registry/new-york/example/tooltip-demo"
+import { Button } from "@/components/ui/button"
 
 export default function KitchenSinkPage() {
   return (
@@ -88,7 +87,7 @@ export default function KitchenSinkPage() {
               <TabsDemo />
             </ComponentWrapper>
           </div>
-          {/* <div className="grid gap-4">
+          <div className="grid gap-4">
             <ComponentWrapper>
               <MenubarDemo />
               <AvatarDemo />
@@ -182,7 +181,7 @@ export default function KitchenSinkPage() {
             <ComponentWrapper>
               <ScrollAreaDemo />
             </ComponentWrapper>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
@@ -194,13 +193,17 @@ function ComponentWrapper({
   children,
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      className={cn(
-        "flex items-center justify-between space-x-4 rounded-md p-4",
-        className
-      )}
-    >
-      {children}
+    <div className="flex flex-col">
+      <div className="flex-1">
+        <div
+          className={cn(
+            "flex items-center justify-between space-x-4 rounded-md p-4",
+            className
+          )}
+        >
+          {children}
+        </div>
+      </div>
     </div>
   )
 }
