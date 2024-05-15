@@ -9,12 +9,6 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    spacing: {
-      formWidth: "1376px",
-      navigationWidth: "1091px",
-      authScreenWidth: "733px",
-      authScreenHeight: "832px",
-    },
     container: {
       center: true,
       padding: "2rem",
