@@ -11,6 +11,10 @@ import FormsPage from './pages/examples/forms/page.tsx'
 import MusicPage from './pages/examples/music/page.tsx'
 import AuthenticationPage from './pages/examples/authentication/page.tsx'
 import CardsPage from './pages/examples/cards/page.tsx'
+import DashboardPage from './pages/examples/dashboard/page.tsx';
+import MailPage from './pages/examples/mail/page.tsx';
+import TaskPage from './pages/examples/tasks/tasks/page.tsx';
+import PlaygroundPage from './pages/examples/playground/page.tsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +40,22 @@ const router = createBrowserRouter([
       {
         path: "cards",
         element: <CardsPage />
+      },
+      {
+        path: "dashboard",
+        element: <DashboardPage />
+      },
+      {
+        path: "mail",
+        element: <MailPage />
+      },
+      {
+        path: "tasks",
+        element: <TaskPage />
+      },
+      {
+        path: "playground",
+        element: <PlaygroundPage />
       },
       {
         path: "",

@@ -19,22 +19,22 @@ const examples = [
     name: "Cards",
     href: "/examples/cards",
   },
-  // {
-  //   name: "Dashboard",
-  //   href: "/examples/dashboard",
-  // },
-  // {
-  //   name: "Mail",
-  //   href: "/examples/mail",
-  // },
-  // {
-  //   name: "Tasks",
-  //   href: "/examples/tasks",
-  // },
-  // {
-  //   name: "Playground",
-  //   href: "/examples/playground",
-  // },
+  {
+    name: "Dashboard",
+    href: "/examples/dashboard",
+  },
+  {
+    name: "Mail",
+    href: "/examples/mail",
+  },
+  {
+    name: "Tasks",
+    href: "/examples/tasks",
+  },
+  {
+    name: "Playground",
+    href: "/examples/playground",
+  },
 ]
 
 interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> { }
