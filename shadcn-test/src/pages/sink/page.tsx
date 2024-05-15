@@ -46,10 +46,12 @@ import ToggleOutline from "@/registry/new-york/example/toggle-outline"
 import ToggleWithText from "@/registry/new-york/example/toggle-with-text"
 import TooltipDemo from "@/registry/new-york/example/tooltip-demo"
 import { Button } from "@/components/ui/button"
+import { Navigation } from "@/components/navigation"
 
 export default function KitchenSinkPage() {
   return (
     <div className="container">
+      <Navigation />
       <div className="grid gap-4">
         <div className="grid grid-cols-3 items-start gap-4">
           <div className="grid gap-4">
@@ -193,17 +195,15 @@ function ComponentWrapper({
   children,
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className="flex flex-col">
-      <div className="flex-1">
-        <div
-          className={cn(
-            "flex items-center justify-between space-x-4 rounded-md p-4",
-            className
-          )}
-        >
-          {children}
-        </div>
-      </div>
+
+    <div
+      className={cn(
+        "flex items-center justify-between space-x-4 rounded-md p-4",
+        className
+      )}
+    >
+      {children}
     </div>
+
   )
 }

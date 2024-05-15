@@ -1,12 +1,6 @@
-'use client'
-
-import Link from "next/link"
-import { zodResolver } from "@hookform/resolvers/zod"
 import { useFieldArray, useForm } from "react-hook-form"
-import { z } from "zod"
-
-import { cn } from "../../../../lib/utils"
-import { Button } from "../../../../components/ui/button"
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
@@ -15,43 +9,25 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../../../../components/ui/form"
-import { Input } from "../../../../components/ui/input"
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../../../../components/ui/select"
-import { Textarea } from "../../../../components/ui/textarea"
-import { toast } from "../../../../components/ui/use-toast"
+} from "@/components/ui/select"
+import { Textarea } from "@/components/ui/textarea"
+import { toast } from "@/components/ui/use-toast"
+import { Link } from "react-router-dom"
 
-const profileFormSchema = z.object({
-  username: z
-    .string()
-    .min(2, {
-      message: "Username must be at least 2 characters.",
-    })
-    .max(30, {
-      message: "Username must not be longer than 30 characters.",
-    }),
-  email: z
-    .string({
-      required_error: "Please select an email to display.",
-    })
-    .email(),
-  bio: z.string().max(160).min(4),
-  urls: z
-    .array(
-      z.object({
-        value: z.string().url({ message: "Please enter a valid URL." }),
-      })
-    )
-    .optional(),
-})
-
-type ProfileFormValues = z.infer<typeof profileFormSchema>
+type ProfileFormValues = {
+  username: string;
+  email: string;
+  bio: string;
+  urls: { value: string }[]
+}
 
 // This can come from your database or API.
 const defaultValues: Partial<ProfileFormValues> = {
@@ -64,7 +40,6 @@ const defaultValues: Partial<ProfileFormValues> = {
 
 export function ProfileForm() {
   const form = useForm<ProfileFormValues>({
-    resolver: zodResolver(profileFormSchema),
     defaultValues,
     mode: "onChange",
   })
@@ -125,7 +100,7 @@ export function ProfileForm() {
               </Select>
               <FormDescription>
                 You can manage verified email addresses in your{" "}
-                <Link href="/examples/forms">email settings</Link>.
+                <Link to="/examples/forms">email settings</Link>.
               </FormDescription>
               <FormMessage />
             </FormItem>
