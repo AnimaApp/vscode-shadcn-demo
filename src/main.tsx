@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,8 +14,9 @@ import CardsPage from './pages/examples/cards/page.tsx'
 import DashboardPage from './pages/examples/dashboard/page.tsx';
 import MailPage from './pages/examples/mail/page.tsx';
 import TaskPage from './pages/examples/tasks/tasks/page.tsx';
-import PlaygroundPage from './pages/examples/playground/page.tsx';
+import { PlaygroundPage } from './pages/examples/playground/page.tsx';
 import TextEditorPage from './pages/examples/text-editor/page.tsx';
+import { PlaygroundLayout } from './pages/examples/playground/layout.tsx';
 
 const router = createBrowserRouter([
   {
@@ -60,7 +61,11 @@ const router = createBrowserRouter([
       },
       {
         path: "playground",
-        element: <PlaygroundPage />
+        element: (
+          <PlaygroundLayout>
+            <PlaygroundPage />
+          </PlaygroundLayout>
+        )
       },
       {
         path: "",
@@ -73,6 +78,7 @@ const router = createBrowserRouter([
     element: <KitchenSinkPage />,
   },
 ]);
+
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
