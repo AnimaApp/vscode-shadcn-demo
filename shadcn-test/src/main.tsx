@@ -9,6 +9,8 @@ import KitchenSinkPage from './pages/sink/page.tsx';
 import ExamplesPage from './pages/examples/page.tsx';
 import FormsPage from './pages/examples/forms/page.tsx'
 import MusicPage from './pages/examples/music/page.tsx'
+import AuthenticationPage from './pages/examples/authentication/page.tsx'
+import CardsPage from './pages/examples/cards/page.tsx'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: "music",
         element: <MusicPage />
+      },
+      {
+        path: "authentication",
+        element: <AuthenticationPage />
+      },
+      {
+        path: "cards",
+        element: <CardsPage />
       },
       {
         path: "",

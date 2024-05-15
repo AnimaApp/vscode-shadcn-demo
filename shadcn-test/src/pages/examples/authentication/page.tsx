@@ -1,22 +1,20 @@
-import Image from "next/image"
-import Link from "next/link"
-
-import { cn } from "../../../../lib/utils"
-import { buttonVariants } from "../../../../components/ui/button"
-import { UserAuthForm } from "./components/user-auth-form"
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
+import { UserAuthForm } from "./user-auth-form"
+import { Link } from "react-router-dom"
 
 export default function AuthenticationPage() {
   return (
     <>
       <div className="md:hidden">
-        <Image
+        <img
           src="/examples/authentication-light.png"
           width={1280}
           height={843}
           alt="Authentication"
           className="block dark:hidden"
         />
-        <Image
+        <img
           src="/examples/authentication-dark.png"
           width={1280}
           height={843}
@@ -26,7 +24,7 @@ export default function AuthenticationPage() {
       </div>
       <div className="container relative hidden h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
         <Link
-          href="/examples/authentication"
+          to="#"
           className={cn(
             buttonVariants({ variant: "ghost" }),
             "absolute right-4 top-4 md:right-8 md:top-8"
@@ -76,14 +74,14 @@ export default function AuthenticationPage() {
             <p className="px-8 text-center text-sm text-muted-foreground">
               By clicking continue, you agree to our{" "}
               <Link
-                href="/terms"
+                to="#"
                 className="underline underline-offset-4 hover:text-primary"
               >
                 Terms of Service
               </Link>{" "}
               and{" "}
               <Link
-                href="/privacy"
+                to="#"
                 className="underline underline-offset-4 hover:text-primary"
               >
                 Privacy Policy

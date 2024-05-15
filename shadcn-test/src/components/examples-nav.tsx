@@ -11,14 +11,14 @@ const examples = [
     name: "Music",
     href: "/examples/music",
   },
-  // {
-  //   name: "Authentication",
-  //   href: "/examples/authentication",
-  // },
-  // {
-  //   name: "Cards",
-  //   href: "/examples/cards",
-  // },
+  {
+    name: "Authentication",
+    href: "/examples/authentication",
+  },
+  {
+    name: "Cards",
+    href: "/examples/cards",
+  },
   // {
   //   name: "Dashboard",
   //   href: "/examples/dashboard",
@@ -45,7 +45,7 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
   return (
     <div className="relative space-y-8 p-8">
       <ScrollArea className="max-w-[600px] lg:max-w-none">
-        <div className={cn("mb-4 flex gap-4 flex-col items-center", className)} {...props}>
+        <div className={cn("mb-4 flex gap-4 flex-col items-start", className)} {...props}>
           {examples.map((example, index) => (
             <Link
               to={example.href}
