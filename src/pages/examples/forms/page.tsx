@@ -1,17 +1,19 @@
-import { Separator } from "@/components/ui/separator"
 import { ProfileForm } from "./profile-form"
+import { useForm } from "react-hook-form"
+import { Form } from "@/components/ui/form"
 
 export default function SettingsProfilePage() {
+  const form = useForm({
+    defaultValues: {},
+    mode: "onChange",
+  })
+
+
   return (
     <div className="space-y-6">
-      <div>
-        <h3 className="text-lg font-medium">Profile</h3>
-        <p className="text-sm text-muted-foreground">
-          This is how others will see you on the site.
-        </p>
-      </div>
-      <Separator />
-      <ProfileForm />
+      <Form {...form}>
+        <ProfileForm />
+      </Form>
     </div>
   )
 }

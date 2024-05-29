@@ -1,1 +1,1 @@
-{"assetsPath":"public/examples/","componentsPath":"","framework":"react","language":"typescript","styling":"tailwind","tailwindConfigPath":"tailwind.config.js","tailwindConfigReuseEnabled":false}
+{"assetsPath":"public/examples/","componentsPath":"src","framework":"react","language":"typescript","styling":"tailwind","tailwindConfigPath":"tailwind.config.js","tailwindConfigReuseEnabled":false}
