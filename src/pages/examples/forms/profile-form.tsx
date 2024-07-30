@@ -21,6 +21,7 @@ import {
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
 import { Link } from "react-router-dom"
+import { LinkIcon } from "lucide-react"
 
 type ProfileFormValues = {
   username: string;
@@ -142,7 +143,7 @@ export function ProfileForm() {
                     Add links to your website, blog, or social media profiles.
                   </FormDescription>
                   <FormControl>
-                    <Input {...field} />
+                    <Input startIcon={<LinkIcon size={16} />} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

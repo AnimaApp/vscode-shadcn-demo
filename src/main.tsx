@@ -17,6 +17,7 @@ import TaskPage from './pages/examples/tasks/tasks/page.tsx';
 import { PlaygroundPage } from './pages/examples/playground/page.tsx';
 import TextEditorPage from './pages/examples/text-editor/page.tsx';
 import { PlaygroundLayout } from './pages/examples/playground/layout.tsx';
+import ModalsPage from './pages/examples/modals/page.tsx';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,7 @@ const router = createBrowserRouter([
         path: "tasks",
         element: <TaskPage />
       },
+      { path: "modals", element: <ModalsPage /> },
       {
         path: "text-editor",
         element: <TextEditorPage />
