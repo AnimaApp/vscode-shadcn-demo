@@ -9,7 +9,6 @@ import { useState } from "react"
 
 interface ModalProps {
   open: boolean
-  modalTitle?: React.ReactNode
   modalHeader?: React.ReactNode
   modalBody?: React.ReactNode
   modalFooter?: React.ReactNode
